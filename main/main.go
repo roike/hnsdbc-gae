@@ -104,7 +104,7 @@ func checkAuthen(r *http.Request, urlPath string) (string, error) {
 		}
 	}
 
-	return "/", nil
+	return "/index.html", nil
 }
 
 var errorHandle rt.AppHandle = func(w io.Writer, r *http.Request, _ rt.Param) error {
